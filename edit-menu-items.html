@@ -3,18 +3,19 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<header>
 		<nav>
 			<font size="20px;">truYum</font>
 			<img src="images/truyum-logo-light.png" alt="logo">
-			<a href=""><font id="Men">Menu</font></a>
+			<a href="menu-item-list-admin.html"><font id="Men">Menu</font></a>
 		</nav>
 	</header>
 	<content>
 		<h2>Edit Menu Items</h2>
-		<form>
+		<form onclick="return editStatus()">
 			<table id="table-Edit">
 				<tr>
 					<td><label for="title">Name</label></td>
