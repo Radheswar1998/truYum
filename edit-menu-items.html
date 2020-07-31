@@ -15,7 +15,7 @@
 	</header>
 	<content>
 		<h2>Edit Menu Items</h2>
-		<form onclick="return editStatus()">
+		<form onsubmit="return editStatus()">
 			<table id="table-Edit">
 				<tr>
 					<td><label for="title">Name</label></td>
@@ -31,7 +31,7 @@
 					<td><label>Category</label></td>
 				</tr>
 				<tr>
-					<td><input type="number" name="price" required="required" id="price"></td>
+					<td><input type="text" name="price" required="required" id="price"></td>
 					<td><input type="text" name="dateOfLaunch" required="required" id="date"></td>
 					<td>
 						<label for="instock">Yes</label>
