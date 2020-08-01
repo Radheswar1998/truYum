@@ -1,12 +1,12 @@
-create database truyum;
+create database truyumui;
 
-use truyum;
+use truyumui;
 
 create table menu_items(
 	menu_id int primary key,
     menu_name varchar(50) not null,
     menu_price decimal(7,2) not null,
-    menu_Active varchar(10) not null,
+    menu_Active varchar(3) not null,
     menu_date date not null,
     menu_category varchar(50) not null, 
     menu_free_deliery varchar(10) not null

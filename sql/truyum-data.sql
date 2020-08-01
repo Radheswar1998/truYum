@@ -1,9 +1,24 @@
 insert into menu_items
-values('sandwich',99,'Yes',15/03/2017,'Maincourse','Yes'),
-	  ('Burger',129,'Yes',23/12/2017,'Maincourse','No'),
-      ('Pizza',149,'Yes',21/08/2017,'Maincourse','No'),
-      ('frenchfries',57,'No',02,07,2017,'Starters','yes'),
-      ('ChocolateBrownie','32','Yes',02/11/2022,'Dessert','Yes');
+values(1, 'Sandwich', 99.00, 'Yes',  '2017-03-15', 'Main Course', 'Yes'),
+(2, 'Burger', 129.00, 'Yes',  '2017-12-23', 'Main Course', 'No'),
+(3, 'Pizza', 149.00, 'Yes',  '2017-08-21', 'Main Course', 'No'),
+(4, 'French Fries', 57.00, 'No',  '2017-07-02', 'Starters', 'Yes'),
+(5, 'Chocolate Brownie', 32.00, 'Yes',  '2022-11-02', 'Dessert', 'Yes');
       
-select menu_name,menu_price,menu_category,menu_free_delivery from menu_items
+select menu_name,menu_price,menu_category,menu_free_deliery from menu_items
 where menu_active in('Yes');
+
+update menu_items
+set 
+menu_price = 97.00,
+menu_date = '2022-04-27'
+where menu_name = 'Sandwich';
+
+insert into user
+values
+(1, 'Anuj Bhasin'),
+(2, 'Sachin Mehndiratta'),
+(3, 'Rahul V'),
+(4, 'Namrata Ghosh'),
+(5, 'Shanaya Jain'),
+(6, 'Harshita Singh')
