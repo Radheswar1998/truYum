@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function fun() {
+			// body...
+			alert("saved");
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<form onclick="return fun()">
+		<fieldset>
+			<legend>Customer Info</legend>
+			<div>
+				<label for="cusname">Name</label>
+				<input type="text" autofocus="on" placeholder="Enter your name" required="required"  name="cusname" id="cusname">
+			</div>
+			<div>
+				<label for="telephone">Telephone</label>
+				<input type="tel" name="telephone" id="telephone" placeholder="Pattern:234-567-8910" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+			</div>
+			<div>
+				<label for="mail">mail</label>
+				<input type="email" name="mail" placeholder="Enter your email address" id="mail">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Books</legend>
+			<input list="books" name="book" autocomplete="books">
+			<datalist id="books">
+				<option>HTML5 - Bruce Lawson and Remy Sharp</option>
+				<option>HTML5 - Up and Running - Mark Pilgrim</option>
+				<option>Head</option>
+			</datalist>
+			<label>Quantity(maximum 5)</label>
+			<input type="number" name="quantity" min="1" max="5" required >
+			<input type="submit" name="submit" >
+				
+		</fieldset>
+	</form>
+</body>
+</html>
